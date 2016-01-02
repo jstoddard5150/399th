@@ -40,6 +40,7 @@ body {
 }
 .left-col-img {  
     background: url(../images/christmas2015.jpg) no-repeat;
+    margin: 0 auto;
     background-position: center center;
     background-size: contain;
     width: 320;
@@ -52,11 +53,13 @@ body {
 }
 footer {
     margin-top: 20px;
-    margin-bottom: -1000px;
-    height: 200px;
-    width: 100%;
+    height: auto;
+    width: auto;
     background-color:#960000;
     color: #fff;
+}
+footer a {
+    color:#fff;
 }
 .band-pic {
     height: 400px;
@@ -74,57 +77,10 @@ footer {
     font-size: 28px;
     font-weight: 400;
 }
-/* .contact-box-1 {
-    margin: 15px;
-    border-radius: 10px;
-    background-color: rgb(0, 0,100);
-    line-height: 150%;
-    font-size: 1.4em;
+.small-device-contact {
+    font-size: 1.2em;
     text-align-last: center;
-    color: #fff;
-    box-shadow: -3px -10px 10px #000;
 }
-.contact-box-1 h4 {
-    text-decoration: underline;
-}.contact-box-3 {
-    margin: 15px;
-    border-radius: 10px;
-    background-color: rgb(18,69,1);
-    line-height: 150%;
-    font-size: 1.4em;
-    text-align-last: center;
-    color: #fff;
-    box-shadow: -5px 10px 10px #000;
-}
-.contact-box-3 h4 {
-    text-decoration: underline;
-}.contact-box-4 {
-    margin: 15px;
-    border-radius: 10px;
-    background-color: #47008F;
-    line-height: 150%;
-    font-size: 1.4em;
-    text-align-last: center;
-    color: #fff;
-    box-shadow: 5px 10px 10px #000;
-}
-.contact-box-4 h4 {
-    margin: 15px;
-    text-decoration: underline;
-}.contact-box-2 {
-    margin: 15px;
-    border-radius: 10px;
-    background-color: #960000;
-    line-height: 150%;
-    font-size: 1.4em;
-    text-align-last: center;
-    color: #fff;
-    box-shadow: 3px -10px 10px #000;
-}
-.contact-box-2 h4 {
-    text-decoration: underline;
-}
-*/
 /*
  colors 
 2B2B2B - gray

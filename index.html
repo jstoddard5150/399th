@@ -44,7 +44,7 @@
           return t;
         }(document, "script", "twitter-wjs"));</script>  
     <script type="text/javascript" href="script/main.js"></script> <!-- twiter button -->
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     <!-- end of the plug-ins -->
     <!-- navbar at the top of the page -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -77,13 +77,13 @@
     </div>
 <!-- main content container -->
 <div class="container-fluid"><!-- social media containers  -->
-    <div class="row">
+
         <!-- Embedded youtube video change the src="..." to update the video-->
-        <div class="col-md-9"><div class="embed-responsive embed-responsive-16by9"> 
+        <div class="col-md-8"><div class="embed-responsive embed-responsive-16by9"> 
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o98TFDtMYoI" frameborder="0" allowfullscreen></iframe></div></div>
         <div class="col-md-3">                        <!-- youtube link goes ^^ here -->
             <!-- facebook widget -->
-        <div class="fb-page hidden-xs hidden-sm embed-responsive-item" data-href="https://www.facebook.com/399tharmyband" data-tabs="timeline, events" data-width="320" data-height="auto" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/399tharmyband"><a href="https://www.facebook.com/399tharmyband">399th Army Band</a></blockquote></div></div>
+        <div class="fb-page hidden-xs hidden-sm" data-href="https://www.facebook.com/399tharmyband" data-tabs="timeline, events" data-width="320" data-height="auto" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote  cite="https://www.facebook.com/399tharmyband"><a href="https://www.facebook.com/399tharmyband">399th Army Band</a></blockquote></div></div>
         </div><!-- end facebook widget -->
         <!-- centered row for social media icons for small devices -->
         <div class="row row-centered">
@@ -91,15 +91,15 @@
             <div class="col-sm-2 col-xs-2">
             <div class="hidden-md hidden-lg"> <!-- facebook -->
                 <a href="http://www.facebook.com/399tharmyband"><span class="fa fa-facebook-square fa-5x"></span></a></div></div>
+            <!-- small social media icons -->
             <div class="col-sm-2 col-xs-2">
             <div class="hidden-md hidden-lg"> <!-- youtube -->
-                <div class="" data-channelid="UCaGsAfXak_LLbzg8EQId4_A" data-layout="default" data-count="hidden"><span class="fa fa-youtube-square  fa-5x" style="color:#e52d27;"></span></div></div></div>
+                <div class="" data-channelid="UCaGsAfXak_LLbzg8EQId4_A" data-layout="default" data-count="hidden"><span class="fa fa-youtube-square  fa-5x" style="color:#e52d27;"></span></div></div></div> <!-- small social media icons -->
             <div class="col-sm-2 col-xs-2">
             <div class="hidden-md hidden-lg">  <!-- twitter -->
              <a href="https://twitter.com/399armyband" data-show-count="false" data-size="large" data-dnt="true"><span class="fa fa-twitter fa-5x"></span></a></div></div>
             <div class="col-sm-3 col-xs-3"></div>
         </div>
-    </div>
     <div class="row" style="height:400px;"> 
         <!-- twitter widget -->
          <div class="col-md-3 hidden-xs hidden-sm">
@@ -122,22 +122,41 @@
         </div>   
     </div>
     </div><!-- end of the social media containers -->
-     <!-- footer container -->
-<div class="container-fluid">
-    <div class="row">
-      <footer>
-          <div class="col-md-4 hidden-sm hidden-xs"><a href="http://www.army.mil"><img style="margin-top:20px;" width="115" height="150" src="images/army_brand.png"></a></div>
-          <div class="col-md-4" style="text-align:center; margin-top:50px;">
-              <strong>399th Army Band</strong><br>
-                  Contact the <a href=""><em>Webmaster</em></a><br>
-                  This is an official <a href="http://www.army.mil"><em>U.S. Army</em></a> website<br>
-                  <abbr title="Phone">P:</abbr> (573) 596-0686</div>
-          <div class="col-md-4 hidden-sm hidden-xs"><a href="http://www.wood.army.mil"><img style="margin-top:20px;margin-left:60%;" width="115" height="150" src="images/MSCoEFLW.png"></a></div>
-    
-    </footer>
-    </div>  
+<!-- end of main content -->
+<!-- footer -->
+<div class="row" style="margin-top 20px;">
+  <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
+    <footer>
+    <div class="row"> <!-- level 2 -->
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin-top:50px;">
+        <!-- U.S. Army Str -->
+        <a href="http://www.army.mil"><img class="img-responsive" style="margin:0 auto;" width="115" height="150" alt="U.S. Army Star" src="images/army_brand.png"></a> 
+      </div>
+      <div class="col-lg-6 col-md-5 col-sm-6 col-xs-6 text-center" style="margin-top:50px;">
+      <h4 style="text-decoration:underline; padding:0; margin:0;">399th Army Band</h4><br>
+                  Contact the <a href=""><strong><em>Webmaster</em></strong></a><br>
+                  This is an official <a href="http://www.army.mil"><strong><em>U.S. Army</em></strong></a> website<br>
+                  <abbr title="Phone">P:</abbr> (573) 596-0686
+      <div class="row"><!-- level 3 feeds -->
+          <div class="col-sm-4"></div>
+      <div class="col-sm-2"><span class="fa fa-rss fa-3x" style="color:#FF7D00"></span></div>
+      <div class="col-sm-2"><span class="fa fa-rss fa-3x" style="color:#3B8AFF;"></span></div>
+          <div class="col-sm-4"></div>
+      </div>
+      <div class="row" style="margin-top:10px;"> <!-- level 4 links -->
+      <div class="col-sm-4"><a style="text-decortation:none; color:#fff" href="http://dodcio.defense.gov/DoDSection508/Std_Stmt.aspx">Section 508</a></div>
+      <div class="col-sm-4"><a style="text-decortation:none; color:#fff;" href="http://www.wood.army.mil/warninginformation.htm">Privacy and Security Notice</a></div>
+      <div class="col-sm-4"><a style="text-decortation:none; color:#fff;\" href="https://www.rmda.army.mil/">Records Managment</a></div>
+        </div></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center" style="margin-top:50px;">
+        <!-- MSCoE patch -->
+        <a href="http://www.wood.army.mil"><img class="img-responsive" style="margin:0 auto;" width="115" height="150" alt="Manuever Support Center of Excellence" src="images/MSCoEFLW.png"></a>
+      </div>
+    </div>
+    </div>
+   </footer>
 </div> 
-      <!-- end of  the footer -->
+<!-- end of  the footer container -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="script/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
