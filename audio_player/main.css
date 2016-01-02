@@ -1,0 +1,426 @@
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+background-color: #124501;
+height:auto;
+padding: 0;
+margin: 0;
+}
+body {
+height:100%;
+width: 80%;
+border: 7.5px solid;
+border-color: #2d0245 ;
+border-radius: 10px;
+box-shadow: 0px 0px 100px #000;
+padding: 0;
+margin: 0 auto;
+font-family: "Lucida Grande","Lucida Sans Unicode","Lucida","Geneva","Verdana","Bitstream Vera Sans",sans-serif;
+color:#fff;
+font-size:18px;
+}
+h1 {
+    font-size:1.6em;
+}
+h2 {
+    font-size:1.4em;
+}
+h3 {
+    font-size:1.2em;
+}
+#wrapper {
+    height:auto;
+    width: 100%;
+    background-color: #2B2B2B;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+header {
+        width:100%;
+        height: 144px;
+        margin: 0 auto;
+        background-color: rgb(0, 0, 100);
+}
+footer {
+       width:100%;
+       height:15%;
+       margin: auto;
+       padding:0;
+       position:relative;
+       clear:both;
+       background-color:rgb(150, 0, 0);
+       font-size: 12pt;
+       
+}
+footer p {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+#footP a{
+    text-decoration: none;
+    color: #000;
+}
+#banner{
+     width: auto;
+     height: auto;
+     font-size: 24pt;
+     text-align: center;
+     padding-top: 10px;
+}
+#banner h5
+{
+    font-style:italic;
+}
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+        content:"";
+        display:table;
+}
+.cf:after {
+        clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+        zoom:1;
+}
+/*horizontal menu styles*/
+#navBar {
+    background-color:#F2CA2C; 
+    border-width: 1px 0px; 
+    border-style: solid;  
+    width: 100%;
+    height: 2.8em;
+}
+nav {
+    margin: 0 5%;
+    background:#F2CA2C; 
+    border-width: 1px 0px; 
+    border-style: solid;
+    height: 2.8em;
+    position: relative;
+    bottom: 1px;
+}
+#navBar ul {
+    height: 2.8em;
+    width: 100%;
+}
+#navBar ul, li {
+    padding: 0;
+    list-style: none;
+    z-index: 2;
+}
+#navBar li {
+    position: relative;
+    float: left;
+}
+#navBar a {
+    display: block;
+    line-height: 2.8em;
+    padding: 0 1em;
+    color: #000;
+    text-decoration: none;
+}
+#navBar .topmenu {
+    margin: 0 auto;
+    width: 100%;
+}
+#navBar .topmenu > li {
+    text-align: center;
+    margin: 0 auto;
+}
+#navBar li a:hover, .topmenu > li:hover > a {
+    background: rgb(150, 0, 0);
+    color: #fff;
+    height: 2.8em;
+    /*padding-top: .3em;*/
+    border-radius: .3em .3em 0 0;
+    position: relative;
+ /*   top: -.6em;*/
+}
+/* dropdown menu*/
+#navBar ul.submenu{
+    float: none;
+    background:#F2CA2C; 
+    height: auto;
+    position: absolute;
+    top: 2.8em;
+    left: -1000000em;
+}
+#navBar .topmenu li:hover ul{
+    left: 0;
+}
+#navBar ul.submenu li{
+    float: none;   
+}
+#navBar ul.submenu li a {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: .2em 1em;
+    white-space: nowrap;
+}
+#navBar ul.submenu li a:hover{
+    background:rgb(150, 0, 0);
+    height: 2.8em;
+    top: 0;
+    border-radius: 0;
+    border-bottom: 0px;
+    border-left: 1px;
+    border-right: 1px;
+}
+/* history styles*/
+#hisMain {
+   margin: 2em 10%;
+   width:80%;
+   height:auto;
+   padding:0;
+   position:inherit;
+   float:left;
+   
+}
+#hisMain p {       
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 1.2em;
+    text-shadow: -2px -5px 5px #000;
+    }
+#hisHead {
+    text-align:center;
+    text-decoration:underline;
+    text-shadow: -5px -5px 5px #000;
+    margin-bottom: 10px;   
+}
+#hisPic1 {
+    text-align:left;
+    margin-right: 5px;
+    float:left;   
+}
+#hisPic2 {
+    text-align:left;
+    margin-left: 5px;
+    float:right;
+}
+/*history end*/
+#homePhoto {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+/* home page style*/
+#home {
+    text-align: center;
+    font-style: italic;
+    margin: 0 auto;
+    width: 70%;
+}
+/*end*/
+/*command team page styles*/
+#commandHome {
+    width: 80%;
+    margin: 0.5em auto 1em auto;
+    text-align: center; 
+    text-decoration: underline;
+    text-shadow: -2px -2px 5px #000;
+}
+#commandHomePic {
+    width: 85%;
+    margin: 10px auto;
+    text-align: center;
+}
+#commandHomePic h5 {
+    margin: auto 75pt;
+    display: inline-flexbox;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12pt;
+    color: #fff;
+    text-decoration: underline;
+    position: relative;
+    margin-bottom: 20px;
+}
+#cheif {
+   float: left;
+}
+#top {
+   float:right;
+}
+#commanderPic {
+    margin-top: 1em;
+    margin-right: 5px;
+    text-align: left;
+    float: left;
+}
+#commanderWrap{
+    margin: 10px auto;
+    width: 80%;
+}
+#commanderWrap p {
+    margin: 5px;
+    text-indent: 2em;
+    font-size: 18px;
+    line-height: 1.1em;
+    text-shadow: -1px -1px 1px #000;
+    letter-spacing: .01em;
+    
+}
+#commanderHead {
+     text-align:center;
+     text-decoration: underline;
+}
+#commanderPara{
+    margin-top: 40px;
+}
+#topPic {
+    margin-top: 1em;
+    margin-right: 5px;
+    text-align: left;
+    float: left;
+}
+#topWrap{
+    margin: 10px auto;
+    width: 80%;
+}
+#topWrap p {
+    margin: 5px;
+    text-indent: 2em;
+    font-size: 18px;
+    line-height: 1.1em;
+    text-shadow: -2px -5px 5px #000;
+    letter-spacing: .01em; 
+}
+#topHead {
+     text-decoration: underline;
+     text-align:center;
+}
+#topPara{
+    margin-top: 40px;
+}
+/*end*/
+/*
+mpt goes here
+*/
+#mptC {
+    margin: 10 auto;
+    margin-left: 10%;
+    width: 480px;
+    height: 300px;
+    border: 1px solid black;
+    float: left;
+    background-image: url(../images/roughriders.PNG);
+    background-size: contain;
+}
+#mptC a {
+    text-align: center;
+    padding-top: 250px;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;   
+}
+#contactBand {
+    width: 80%;
+    margin: 10px auto;
+    
+}
+#contactBand h2{
+    text-align:center;
+}
+#audioPlayer
+{
+    margin: 200px 32.5%;
+    width:60%;
+    height:100%;
+}
+.jp-playlist li {
+    float:none;
+}
+.audioHeader h2
+{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: -2px -5px 5px #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 1em auto .5em auto;
+}
+.audioHeader p
+{
+    text-align: center;
+    text-decoration: clear;
+    font-style: italic;
+    text-shadow: -2px -2px 2px #000;
+    font-size: 13px;
+}
+.contactMain
+{ 
+    text-shadow: -2px -2px 2px #000;
+    text-indent: 2em;
+    width: 80%;
+    margin: 1em auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+.contactMain h2
+{
+    text-decoration: underline;
+    margin: 1em;
+}
+.contactMain h4
+{
+    text-decoration: underline;
+    margin-top:1em;
+}
+.contactMain p {
+    text-align: left;
+}
+.contactMain a {
+    font-style: italic;
+}

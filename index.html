@@ -48,33 +48,27 @@
     <!-- end of the plug-ins -->
     <!-- navbar at the top of the page -->
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- brand and toggle get grouped together -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseMenu" aria-expanded="false">
-                    <span class="sr-only">Toggle Navagation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+    <div class="container-fluid">
+        <!-- brand and toggle get grouped together -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bar" aria-expanded="false">
+                <span class="sr-only">Toggle Navagation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
                 <a class="navbar-brand" href="index.html">399th Army Band |</a>
-            </div>
-        <div class="collapse navbar-collapse" id="collapseMenu">
+        </div>
+        <div class="collapse navbar-collapse" id="nav-bar">
             <ul class="nav navbar-nav">
-                <li><a href="contact.html">History<span class="sr-only">(current)</span></a></li>
-                <li class="dropdown">
-                <a href="contact.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Command<span class="carat"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="contact.html">Commander</a></li>
-                        <li><a href="contact.html">1SG</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Audio Links</a></li>
+                <li><a href="history.html">History<span class="sr-only">(current)</span></a></li>
+                <li><a href="command.html">Command</a></li>
+                <li><a href="audio.html">Audio Links</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>   
         </div>
-        </div>  
-    </nav>
+    </div>  
+</nav>
       
     <div class="jumbotron">
         <h1>399th Army Band</h1>
@@ -82,15 +76,15 @@
         <p><a class="btn btn-primary btn-success btn-lg pull-right" href="contact.html" role="button" id="jumboBtn">Request the band!!!</a></p>
     </div>
 <!-- main content container -->
-<div class="container-fluid">
+<div class="container-fluid"><!-- social media containers  -->
     <div class="row">
         <!-- Embedded youtube video change the src="..." to update the video-->
         <div class="col-md-9"><div class="embed-responsive embed-responsive-16by9"> 
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o98TFDtMYoI" frameborder="0" allowfullscreen></iframe></div></div>
-        <div class="col-md-3">
+        <div class="col-md-3">                        <!-- youtube link goes ^^ here -->
             <!-- facebook widget -->
         <div class="fb-page hidden-xs hidden-sm embed-responsive-item" data-href="https://www.facebook.com/399tharmyband" data-tabs="timeline, events" data-width="320" data-height="auto" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/399tharmyband"><a href="https://www.facebook.com/399tharmyband">399th Army Band</a></blockquote></div></div>
-        </div>
+        </div><!-- end facebook widget -->
         <!-- centered row for social media icons for small devices -->
         <div class="row row-centered">
             <div class="col-sm-3 col-xs-3"></div>
@@ -127,7 +121,7 @@
              <div class="left-col-img-small"></div>
         </div>   
     </div>
-    </div>
+    </div><!-- end of the social media containers -->
      <!-- footer container -->
 <div class="container-fluid">
     <div class="row">
@@ -142,7 +136,8 @@
     
     </footer>
     </div>  
-</div>
+</div> 
+      <!-- end of  the footer -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="script/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
