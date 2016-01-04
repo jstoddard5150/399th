@@ -14,7 +14,6 @@
 
 
 .jp-audio,
-.jp-audio-stream
 {
 	font-size:16px;
 	font-family:Verdana, Arial, sans-serif;
@@ -39,21 +38,15 @@
 }
 
 .jp-interface {
-	box-shadow:-3px -3px 3px #000;
 	border: 2px solid #000;
 	position: relative;
 	height: auto;
-	background-color: #2d0245;
+	background: rgb(149,149,149); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(149,149,149,1) 0%, rgba(13,13,13,1) 46%, rgba(1,1,1,1) 50%, rgba(10,10,10,1) 53%, rgba(78,78,78,1) 76%, rgba(56,56,56,1) 87%, rgba(27,27,27,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 );
 	width:105%;
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#2d0245), to(#000f00));
-	background-image: -moz-linear-gradient(#2d0245, #000f00);
-	background-image: -ms-linear-gradient(#2d0245, #000f00);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2d0245), color-stop(100%, #000f00));
-	background-image: -webkit-linear-gradient(#2d0245, #000f00);
-	background-image: -o-linear-gradient(#2d0245, #000f00);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d0245', endColorstr=#000f00, GradientType=0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d0245', endColorstr='#2B2B2B', GradientType=0)";
-	background-image: linear-gradient(#2d0245, #000f00);
 	-webkit-border-radius: 3px;
 	-khtml-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -61,15 +54,14 @@
 	border-radius: 3px;
 }
 .jp-audio .jp-interface {
-	height:150px;
-    width: 100%;
+	height:45px;
+    width: 105%;
+    margin-left: -2.5%;
 }
-.jp-audio-stream .jp-interface {
-	height:80px;
-}
+
 /* @group CONTROLS */
 .btn-link{ /* sets color for buttons and overides BS defaults */
-    color: rgb(1,100,18);
+color:#337ab7;
 }
 .jp-controls-holder {
 	clear: both;
@@ -105,25 +97,32 @@
 
 .jp-progress {
     margin-top: 10px;
-	background-color: rgb(150,0,0);
+	background-color: #464849;
     border-radius: 5px
 }
 .jp-audio .jp-progress {
-	height:15px;
+	height:10px;
 }
 .jp-audio .jp-type-playlist .jp-progress {
 	width:100%;
 }
 .jp-seek-bar {
-	background:rgb(150,0,0);
+    background-color:#464849;
 	width:0px;
 	height:100%;
 	cursor: pointer;
+    border-radius: 10px;
 }
 .jp-play-bar {
-	background-color:rgb(0,20,200);
-	width:0px;
+    box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.3) inset;
+	background: rgb(183,222,237); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	width: 17.538%;
 	height:100%;
+    border-radius: 10px;
 }
 
 /* @group volume controls */
@@ -137,17 +136,21 @@
 }
 
 .jp-volume-bar {
-    margin-top: 10px;
+    margin-top: 15px;
 	overflow:hidden;
-	background: #2d0245;
-    border: 2px solid #fff;
+	background: #464849;
     border-radius: 10px;
 	width:100%px;
-	height:20px;
+	height:10px;
 	cursor: pointer;
 }
 .jp-volume-bar-value {
-	background:#F2CA2C;
+	box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.3) inset;
+	background: rgb(183,222,237); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	width:0px;
 	height:20px;
 }
@@ -188,11 +191,15 @@
 
 .jp-details,
 .jp-playlist {
-	width:100%;
+	width: 105%;
+    margin-left: -2.5%;
 	height: 200px;
 	overflow: auto;
-	margin: 0 auto;
 	background-color:#2B2B2B;
+    border-radius: 10px;
+    bkit-box-shadow:    0px -30px 40px 20px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    0px -30px 40px 20px rgba(0, 0, 0, 1);
+    box-shadow:         0px -30px 40px 20px rgba(0, 0, 0, 1);
 }
 
 .jp-type-single .jp-details,
@@ -203,7 +210,6 @@
 .jp-details .jp-title {
 	margin:0;
 	padding:5px 20px;
-	font-size:1.2 em;
 	font-weight:bold;
 }
 
@@ -211,14 +217,15 @@
 	list-style-type:none;
 	margin:0;
 	padding:0 30px;
-	font-size:q.2em;
 }
 .jp-playlist li {
 	padding:5px 0 4px 20px;
-	border-bottom:1px solid color#fff;
+    color: rgb(113,206,239);
+    border-bottom: 2px ridge #eee;
 }
 .jp-playlist li div {
 	display:inline;
+    border-bottom-style:
 }
 
 /* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
@@ -228,14 +235,11 @@ div.jp-type-playlist div.jp-playlist li:last-child {
 	border-bottom:none;
 }
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
-	list-style-type:square;
-	list-style-position:inside;
 	padding-left:0px;
 }
 div.jp-type-playlist div.jp-playlist a {
-	color: #fff;
+	color: rgb(113,206,239);
 	text-decoration: none;
-	border-bottom: 1px solid #eee;
 }
 div.jp-type-playlist div.jp-playlist a:hover {
 	color:#0d88c1;
@@ -304,6 +308,12 @@ span.jp-artist {
 	display:block;
 	text-align:center;
 	font-weight:bold;
+}
+.audio-container {
+    border-radius: 10px;
+    bkit-box-shadow: -10px -10px 30px 100px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow:    -1px 0px 30px 100px rgba(0, 0, 0, 0.50);
+    box-shadow:         -1px 0px 30px 100px rgba(0, 0, 0, 0.50);
 }
 
 /* @end */

@@ -18,7 +18,8 @@
     <!-- jQuery (necessary for Bootstrap's and jPlayers JavaScript plugins) -->
     <script src="script/jquery-1.11.3.min.js"></script>
     <script src="script/jquery.jplayer.js" type="text/javascript"></script>
-    <script src="script/jplayer.playlist.min.js" type="text/javascript"></script>  
+    <script src="script/jplayer.playlist.min.js" type="text/javascript"></script>
+    <script src="script/main.js" type="text/javascript"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -185,7 +186,7 @@ $(document).ready(function(){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-                <a class="navbar-brand" href="index.html">399th Army Band |</a>
+                <a class="navbar-brand" href="399th_home.html">399th Army Band |</a>
         </div>
         <div class="collapse navbar-collapse" id="nav-bar">
             <ul class="nav navbar-nav">
@@ -197,24 +198,24 @@ $(document).ready(function(){
         </div>
     </div>  
 </nav>
-<div class="container"><!-- audio container -->         
-<div class="text-center" style="margin-top:50px;">   
+<div class="container"><!-- audio container -->
+<div class="text-center" style="margin-top:100px;">   
 <h1>Ceremonial Audio Links:</h1><p>"All links are free and can be downloaded by right clicking "mp3" and saving link location"</p></div>
 <div class="jp-jplayer" id="jquery_jplayer_1" style="width: 0px; height: 0px;"><img style="width: 0px; height: 0px; display: none;"><audio title="Adjutants Call" id="jp_audio_0" preload="metadata"></audio></div>
     <div class="container">
-    <div id="jp_container_1" role="application" aria-label="media player" class="jp-audio col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:95%;margin:10px 2.5%;">
+    <div id="jp_container_1" role="application" aria-label="media player" class="jp-audio audio-container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:90%;margin:10px 5%;">
         <div class="jp-type-playlist">
         <div class="jp-gui jp-interface">
         <div class="row" id="button_container"><!-- button row -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><!-- buttons -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><!-- buttons -->
             <div class="row">
-                <button tabindex="0" class="jp-previous btn btn-default btn-link col-lg-3 col-md-3 col-sm-3 col-xs-3" role="button"><span class="fa fa-backward fa-2x" alt="previous"></span></button>
+                <button tabindex="0" class="jp-previous btn btn-default btn-link col-lg-3 col-md-3 col-sm-3 hidden-xs" role="button"><span class="fa fa-backward fa-2x" alt="previous"></span></button>
                 <button tabindex="0" class="jp-play btn btn-default btn-link col-lg-3 col-md-3 col-sm-3 col-xs-3" role="button"><span class="fa fa-play fa-2x" alt="play"></span></button>
                 <button tabindex="0" class="jp-stop btn btn-default btn-link col-lg-3 col-md-3 col-sm-3 col-xs-3" role="button"><span class="fa fa-stop fa-2x" alt="stop"></span></button>
-                <button tabindex="0" class="jp-next btn btn-default btn-link col-lg-3 col-md-3 col-sm-3 col-xs-3" role="button"><span class="fa fa-forward fa-2x" alt="next"></span></button>
+                <button tabindex="0" class="jp-next btn btn-default btn-link col-lg-3 col-md-3 col-sm-3 hidden-xs" role="button"><span class="fa fa-forward fa-2x" alt="next"></span></button>
             </div>
         </div> <!-- end buttons -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
             <!-- progress bar -->
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -228,21 +229,21 @@ $(document).ready(function(){
             <!-- time holder -->
             <div class="row">
                 <div class="jp-time-holder">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-left"><div class="jp-current-time" role="timer" aria-label="time">00:02</div></div><!-- progress start -->
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right"><div class="jp-duration" role="timer" aria-label="duration">04:27</div></div><!-- progress stop -->
+                <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs pull-left"><div class="jp-current-time" role="timer" aria-label="time">00:02</div></div><!-- progress start -->
+                <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs pull-right"><div class="jp-duration" role="timer" aria-label="duration">04:27</div></div><!-- progress stop -->
             </div>
             </div>
             <!-- time holder -->
         </div>
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> <!-- jp volume controls -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"> <!-- jp volume controls -->
             <div class="row">
-            <button tabindex="0" class="btn btn-default btn-link col-lg-4 col-md-4 col-sm-4 col-xs-4 jp-mute" role="button" style="color:#F2CA2C;"><span class="fa fa-volume-off fa-2x" alt="volume off"></span></button>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <button tabindex="0" class="btn btn-default btn-link col-lg-4 col-md-4 col-sm-4 col-xs-4 jp-mute" role="button"><span class="fa fa-volume-off fa-2x" alt="volume off"></span></button>
+            <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs">
              <div class="jp-volume-bar">
 					<div class="jp-volume-bar-value"></div>
 				</div>
             </div>
-            <button tabindex="0" class="btn btn-default btn-link col-lg-4 col-md-4 col-sm-4 col-xs-4 jp-volume-max" role="button" style="color:#F2CA2C;"><span class="fa fa-volume-up fa-2x" alt="volume max"></span></button>
+            <button tabindex="0" class="btn btn-default btn-link col-lg-4 col-md-4 col-sm-4 col-xs-4 jp-volume-max" role="button"><span class="fa fa-volume-up fa-2x" alt="volume max"></span></button>
             </div>
         </div><!-- end jp volume controls -->
         </div>
@@ -292,12 +293,12 @@ $(document).ready(function(){
 
        
 <!-- footer -->
-<div style="margin-top:30px;">
+<div style="margin-top:300px;">
     <footer>
     <div class="row" style="margin:0;"> <!-- level 2 -->
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin-top:50px;">
         <!-- U.S. Army Str -->
-        <a href="http://www.army.mil"><img class="img-responsive" style="margin:0 auto;" width="115" height="150" alt="U.S. Army Star" src="images/army_brand.png"></a> 
+        <a href="http://www.army.mil"><img class="img-responsive" style="margin:0 auto;" title="U.S.Army" target="_blank" width="115" height="150" alt="U.S. Army Star" src="images/army_brand.png"></a> 
       </div>
       <div class="col-lg-6 col-md-5 col-sm-6 col-xs-6 text-center" style="margin-top:50px;">
       <h4 style="text-decoration:underline; padding:0; margin:0;">399th Army Band</h4><br>
@@ -306,8 +307,8 @@ $(document).ready(function(){
                   <abbr title="Phone">P:</abbr> (573) 596-0686
       <div class="row"><!-- level 3 feeds -->
           <div class="col-sm-4"></div>
-      <div class="col-sm-2"><span class="fa fa-rss fa-3x" style="color:#FF7D00"></span></div>
-      <div class="col-sm-2"><span class="fa fa-rss fa-3x" style="color:#3B8AFF;"></span></div>
+      <div class="col-sm-2"><a href="http://www.army.mil/rss/" target="_blank" title="Rss"><span class="fa fa-rss fa-3x" style="color:#FF7D00"></span></a></div>
+      <div class="col-sm-2"><a href="http://www.army.mil/rss/podcasts/" target="_blank" title="Podcast"><span class="fa fa-rss fa-3x" style="color:#3B8AFF;"></span></a></div>
           <div class="col-sm-4"></div>
       </div>
       <div class="row" style="margin-top:10px;"> <!-- level 4 links -->
@@ -317,7 +318,7 @@ $(document).ready(function(){
         </div></div>
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center" style="margin-top:50px;">
         <!-- MSCoE patch -->
-        <a href="http://www.wood.army.mil"><img class="img-responsive" style="margin:0 auto;" width="115" height="150" alt="Manuever Support Center of Excellence" src="images/MSCoEFLW.png"></a>
+        <a href="http://www.wood.army.mil"><img class="img-responsive" title="Fort Leonard Wood, MO" target="_blank" style="margin:0 auto;" width="115" height="150" alt="Manuever Support Center of Excellence" src="images/MSCoEFLW.png"></a>
       </div>
     </div>
    </footer>

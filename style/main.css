@@ -81,6 +81,12 @@ footer a {
     font-size: 1.2em;
     text-align-last: center;
 }
+.contact-modal-paragraph{
+    font-size: 1.2em;
+}
+.contact-modal-header {
+    font-size: 1.4em;
+}
 /*
  colors 
 2B2B2B - gray
