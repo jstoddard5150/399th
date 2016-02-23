@@ -20,35 +20,20 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <script >
+      $(function () {
+  $('#emailLink').on('click', function (event) {
+    alert("Huh");
+    var email = 'timothy.e.kresse.mil@mail.mil';
+    var subject = 'Circle Around';
+    var emailBody = 'Some blah';
+    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+  });
+});
+      
+      </script>
   </head>
   <body>
-          <!-- social media plugins -->
-<div id="fb-root"></div> <!-- facebook widget -->
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=382782901921861";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <script src="https://apis.google.com/js/platform.js"></script> <!-- youtube button -->
-    <script>window.twttr = (function(d, s, id) {   //twitter widget
-        var js, fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
-          if (d.getElementById(id)) return t;
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "https://platform.twitter.com/widgets.js";
-          fjs.parentNode.insertBefore(js, fjs);
-          t._e = [];
-          t.ready = function(f) {
-            t._e.push(f);
-          };
-          return t;
-        }(document, "script", "twitter-wjs"));</script>  
-    <script type="text/javascript" href="script/main.js"></script> <!-- twiter button -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-    <!-- end of the plug-ins -->
     <!-- navbar at the top of the page -->
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -73,59 +58,16 @@
     </div>  
 </nav>
       
-    <div class="jumbotron">
-        <h1>399th Army Band</h1>
-        <h3>"Service Through Song"</h3>
-        <p><a class="btn btn-primary btn-success btn-lg pull-right" href="contact.html" role="button" id="jumboBtn">Request the band!!!</a></p>
-    </div>
-<!-- main content container -->
-<div class="container-fluid"><!-- social media containers  -->
-
-        <!-- Embedded youtube video change the src="..." to update the video-->
-        <div class="col-md-9"><div class="embed-responsive embed-responsive-16by9"> 
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o98TFDtMYoI" frameborder="0" allowfullscreen></iframe></div></div>
-        <div class="col-md-3">                        <!-- youtube link goes ^^ here -->
-            <!-- facebook widget -->
-        <div class="fb-page hidden-xs hidden-sm" data-href="https://www.facebook.com/399tharmyband" data-tabs="timeline, events" data-width="320" data-height="auto" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote  cite="https://www.facebook.com/399tharmyband"><a href="https://www.facebook.com/399tharmyband">399th Army Band</a></blockquote></div></div>
-        </div><!-- end facebook widget -->
-        <!-- centered row for social media icons for small devices -->
-        <div class="row row-centered">
-            <div class="col-sm-3 col-xs-3"></div>
-            <div class="col-sm-2 col-xs-2">
-            <!-- small social media icons -->
-            <div class="hidden-md hidden-lg"> <!-- facebook -->
-                <a href="http://www.facebook.com/399tharmyband"><span class="fa fa-facebook-square fa-5x" alt="Facebook" target="_blank"></span></a></div></div>
-            <div class="col-sm-2 col-xs-2">
-            <div class="hidden-md hidden-lg"> <!-- youtube -->
-                <div class="" data-channelid="UCaGsAfXak_LLbzg8EQId4_A" data-layout="default" data-count="hidden"><span class="fa fa-youtube-square  fa-5x" style="color:#e52d27;" target="_blank" alt="Youtube"></span></div></div></div> <!-- small social media icons -->
-            <div class="col-sm-2 col-xs-2">
-            <div class="hidden-md hidden-lg">  <!-- twitter -->
-             <a href="https://twitter.com/399armyband" data-show-count="false" data-size="large" data-dnt="true"><span class="fa fa-twitter fa-5x" target="_blank" alt="Twitter"></span></a></div></div>
-            <div class="col-sm-3 col-xs-3"></div>
-        </div>
-    <div class="row" style="height:400px;"> 
-        <!-- twitter widget -->
-         <div class="col-md-3 hidden-xs hidden-sm">
-            <a class="twitter-timeline"; data-widget-id="600720083413962752" href="https://twitter.com/399armyband" width="320" height="400">
-              Tweets by @399th Army Band
-            </a>
-        </div>
-        <!-- mission statement -->
-        <div class="col-md-1"></div>
-        <div class="col-md-4 vcenter hidden-sm hidden-xs">
-        <h4 class="fa fa-2x mission" style="font-style: italic;"><span class="fa fa-quote-left fa-1x fa-pull-left"></span>The 399th Army Band has traveled throughout the Midwest in support of soldiers and community relations <span class="fa fa-quote-right fa-1x"></span></h4>
-        </div>
-        <div class="col-md-1"></div>
-        <!-- to change picture refer to main.css -->
-         <div class="col-md-3 hidden-sm hidden-xs">
-             <div class="left-col-img"></div>
-        </div>
-        <div class="col-sm-12 text-center hidden-lg hidden-md">
-             <div class="left-col-img-small"></div>
-        </div>   
-    </div>
-    </div><!-- end of the social media containers -->
-<!-- end of main content -->
+ <form action="mailto:stoddardj@ufl.edu"
+       method="post"
+       enctype="text/plain">
+     
+     <input type="text" name="lastname"><br><br>
+    <input type="submit" value="Submit">
+    
+</form>
+      
+      
 <!-- footer -->
 <div style="margin-top:30px;">
     <footer>

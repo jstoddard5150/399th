@@ -23,6 +23,7 @@ body {
 #jumboBtn {
     position:sticky;
     margin-top: 98px;
+    
 }
 
 .center-block {
@@ -33,17 +34,17 @@ body {
 }
 
 .left-col-img-small {  
-    background: url(../images/christmas2015.jpg) no-repeat; /* copy a .png or .jpeg file in the images folder and then update the name here and left-col-img */
+    background: url(../images/christmas2015.jpg) no-repeat;  /* This is for the current concert flyer. Copy a .png or .jpeg file in the images folder and then update the name here  */
     background-position: center center;
     background-size:contain;
     height: 400px;
 }
 .left-col-img {  
-    background: url(../images/christmas2015.jpg) no-repeat;
+    background: url(../images/christmas2015.jpg) no-repeat; /* This is for the current concert flyer. Copy a .png or .jpeg file in the images folder and then update the name here  */
     margin: 0 auto;
     background-position: center center;
     background-size: contain;
-    width: 320;
+    
     height: 400px;
 }
 .mission {
@@ -73,9 +74,9 @@ footer a {
 .his-main h2 {
     font-size: 40px;
 }
-.his-main h4 {
-    font-size: 28px;
-    font-weight: 400;
+.his-main {
+    font-family: 'Merriweather', serif; 
+    font-size: 1.6em;
 }
 .small-device-contact {
     font-size: 1.2em;
@@ -86,6 +87,36 @@ footer a {
 }
 .contact-modal-header {
     font-size: 1.4em;
+}
+.ceremonial-music {
+    font-family: 'Merriweather', serif; 
+    font-size: 1.2em;   
+}
+.btn-ceremonial {
+    background-color: white;
+    border: none;
+    height: 200px;
+}
+.btn-ceremonial:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    width:100%;
+    border-radius: 10px;
+    background-color: #2B2B2B;
+    color: aliceblue;
+}
+.btn-ceremonial h4 {
+    font-size: 1.4em;
+}
+.btn-contact {
+    background-color: white;
+    border: none;
+
+}
+.btn-contact:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 10px;
+    background-color: #2B2B2B;
+    color: aliceblue;
 }
 /*
  colors 

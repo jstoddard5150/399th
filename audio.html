@@ -29,7 +29,7 @@
     <![endif]-->
       
 <script type="text/javascript">
-//<![CDATA[
+//<![CDATA[ //to add songs to the player use the script below and then update the li in the body section
 $(document).ready(function(){
 
 	new jPlayerPlaylist({
@@ -200,7 +200,7 @@ $(document).ready(function(){
 </nav>
 <div class="container"><!-- audio container -->
 <div class="text-center" style="margin-top:100px;">   
-<h1>Ceremonial Audio Links:</h1><p>"All links are free and can be downloaded by right clicking "mp3" and saving link location"</p></div>
+<h1 style="text-decoration:underline;">Ceremonial Music:</h1><p>"All links are free and can be downloaded by right clicking "mp3" and saving link location"</p></div>
 <div class="jp-jplayer" id="jquery_jplayer_1" style="width: 0px; height: 0px;"><img style="width: 0px; height: 0px; display: none;"><audio title="Adjutants Call" id="jp_audio_0" preload="metadata"></audio></div>
     <div class="container">
     <div id="jp_container_1" role="application" aria-label="media player" class="jp-audio audio-container col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width:90%;margin:10px 5%;">
@@ -250,8 +250,10 @@ $(document).ready(function(){
     </div>
 <!-- jplayer playlist -->
 <div class="jp-playlist">
+    <!-- here is here you add the new music in the jplayer -->
 			<ul style="display: block;">
                 <li class="jp-playlist-current"><div><a class="jp-playlist-item-remove" style="display: none;" href="javascript:;">×</a><a tabindex="0" class="jp-playlist-item jp-playlist-current" href="javascript:;"></a></div></li>
+        <!-- here is here you add the new music in the jplayer copy from li to /li for every new song added-->
                 <li><div><a class="jp-playlist-item-remove" style="display: none;" href="javascript:;">×</a><a tabindex="0" class="jp-playlist-item" href="javascript:;"></a></div></li>
                 <li><div><a class="jp-playlist-item-remove" style="display: none;" href="javascript:;">×</a><a tabindex="0" class="jp-playlist-item" href="javascript:;"></a></div></li>
                 <li><div><a class="jp-playlist-item-remove" style="display: none;" href="javascript:;">×</a><a tabindex="0" class="jp-playlist-item" href="javascript:;"></a></div></li>
@@ -288,8 +290,403 @@ $(document).ready(function(){
 <!-- end jplayer container -->
 
           <p style=" text-align: center;">You can download our entire library by clicking <a href="audio/audio.zip">This Link</a></p>
-
 </div><!-- end audio container -->
+<!-- begin cerimonial guide by using modals --> 
+<div class="text-center">
+    <div class="container" >
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 style="text-decoration:underline; margin:20px auto;">Cerimonial Music Guidlines:</h2>    
+        </div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#preMusic"  class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Pre-Music</h4></button>
+            <div class="modal" id="preMusic" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Premusic</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Here are examples of selections that may be played for pre-ceremony music, March On, Sound Off, Inspection of Troops, Pass in Review, and street parades: The Invincible Eagle, National Emblem, National Spirit March, The Rifle Regiment, The Thunderer, Washington Grays, and Washington Post March.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Adjutants_Call" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span><h4>Adjutant's Call</h4></button>
+            <div class="modal" id="Adjutants_Call" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Adjutant's Call</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Adjutant's Call indicates that the adjutant is about to form the guard, battalion, or regiment. The adjutant is responsible for the formation of troops. Adjutant's Call is preceded by Attention.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Armed_Forces_Medley" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Armed Forces Medley</h4></button>
+            <div class="modal" id="Armed_Forces_Medley" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Armed Forces Medley</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Armed Forces Medley is a medley of The Coast Guard, Air Force, Navy, Marines, and Army Songs. The Army Goes Rolling Along The official Army song. Army personnel will stand at attention and sing the lyrics of the Army song when the Army song is played.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#attention" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Attention</h4></button>
+            <div class="modal" id="attention" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Attention</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>After the performance of Attention, unit commanders immediately face about and command their units (in sequence from right to left) to attention and then face about. When the last unit is at attention, the adjutant directs "Sound Adjutant's Call."</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Auld_Land_Syne" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Auld Land Syne</h4></button>
+            <div class="modal" id="Auld_Land_Syne" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Auld Land Syne</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Auld Land Syne is a popular selection for performance at retirement ceremonies before the Army song**.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Four_Ruffles_and_Flourishes" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Four Ruffles and Flourishes</h4></button>
+            <div class="modal" id="Four_Ruffles_and_Flourishes" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Four Ruffles and Flourishes</h2>
+                                </div>
+                                <div class="modal-body"> <!-- The main body of the pop-up window -->
+                                       <p>Four Ruffles and Flourishes followed by the national anthem is used to provide musical honors to former Presidents of the United States or the President-elect. When followed by the national anthem of a foreign country, it is used to provide musical honors to foreign sovereigns, chiefs of state, or members of reigning royal families.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Four_Ruffles_and_Flourishes_Generals_March" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Four Ruffles and Flourishes, General's March</h4></button>
+            <div class="modal" id="Four_Ruffles_and_Flourishes_Generals_March" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Four Ruffles and Flourishes, General's March</h2>
+                                </div>
+                                <div class="modal-body"> <!-- The main body of the pop-up window -->
+                                       <p>Four Ruffles and Flourishes followed by the General's March is used to provide musical honors to (four star) Generals.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+    </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Four_Ruffles_and_Flourishes_Grandioso_of_The_Stars_and_Stripes_Forever" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Four Ruffles and Flourishes, Grandioso of The Stars and Stripes Forever</h4></button>
+            <div class="modal" id="Four_Ruffles_and_Flourishes_Grandioso_of_The_Stars_and_Stripes_Forever" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Four Ruffles and Flourishes, Grandioso of The Stars and Stripes Forever</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Four Ruffles and Flourishes followed by the grandioso strain (last 32 measures) of The Stars and Stripes Forever is used to provide musical honors to senior civilian government officials (see AR 600-25 for more a detailed list.)</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+    </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Armed_Forces_Medley" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Four Ruffles and Flourishes, Hail to the Chief</h4></button>
+            <div class="modal" id="Four_Ruffles_and_Flourishes_Hail_to_the_Chief" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Four Ruffles and Flourishes, Hail to the Chief</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Four Ruffles and Flourishes followed by Hail to the Chief is used to provide musical honors to the President of the United States.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+    </div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Four_Ruffles_and_Flourishes_Hail_Columbia" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Four Ruffles and Flourishes, Hail Columbia</h4></button>
+            <div class="modal" id="Four_Ruffles_and_Flourishes_Hail_Columbia" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Four Ruffles and Flourishes, Hail Columbia</h2>
+                                </div>
+                                <div class="modal-body"> <!-- The main body of the pop-up window -->
+                                       <p>Four Ruffles and Flourishes followed by the General's March is used to provide musical honors to (four star) Generals.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+    </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Grandioso_of_The_Stars_and_Stripes_Forever" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Grandioso of The Stars and Stripes Forever</h4></button>
+            <div class="modal" id="Grandioso_of_The_Stars_and_Stripes_Forever" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Grandioso of The Stars and Stripes Forever</h2>
+                                </div>
+                                <div class="modal-body"> <!-- The main body of the pop-up window -->
+                                       <p>Four Ruffles and Flourishes followed by the grandioso strain (last 32 measures) of The Stars and Stripes Forever is used to provide musical honors to senior civilian government officials (see AR 600-25 for more a detailed list.)</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#National_Emblem_trio" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>National Emblem (trio)</h4></button>
+            <div class="modal" id="National_Emblem_trio" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">National Emblem (trio)</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Four Ruffles and Flourishes followed by Hail to the Chief is used to provide musical honors to the President of the United States.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#One_Ruffle_and_Flourish_Generals_March" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>One Ruffle and Flourish, General's March</h4></button>
+            <div class="modal" id="One_Ruffle_and_Flourish_Generals_March" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">One Ruffle and Flourish, General's March</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>One Ruffle and Flourish followed by the General's March is used to provide musical honors to Brigadier (one star) Generals.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#retreat" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Retreat</h4></button>
+            <div class="modal" id="retreat" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Retreat</h2>
+                                </div>
+                                <div class="modal-body"> <!-- The main body of the pop-up window -->
+                                       <p>Retreat signals the ceremony that pays honors to the national flag when it is lowered in the evening. Military personnel in formation should stand at parade rest during the performance of Retreat. Personnel in uniform should face the flag and stand at attention. All others should remove headgear, face the flag and stand at attention. Retreat is followed by the performance of To the Color, or the national anthem.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#reveille" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Reveille</h4></button>
+            <div class="modal" id="reveille" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Reveille</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Reveille denotes when the flag is raised in the morning and honors paid to it. All military personnel in uniform should face the flag and render hand salute during the performance of Reveille. All others should remove headgear, face the flag and place the right hand over the heart and stand at attention.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#The_Star_Spangled_Banner" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>The Star Spangled Banner</h4></button>
+            <div class="modal" id="The_Star_Spangled_Banner" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">The Star Spangled Banner</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>The national anthem of the United States. All military personnel in uniform should face the flag and render hand salute during the performance of The Star Spangled Banner. When indoors, military personnel should stand at attention. All others should remove headgear, face the flag, place the right hand over the heart and stand at attention.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+    </div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#taps" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Taps</h4></button>
+            <div class="modal" id="taps" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Taps</h2>
+                                </div>
+                                <div class="modal-body"> <!-- The main body of the pop-up window -->
+                                       <p>All military personnel in uniform should stand at present arms during the performance of Taps. When indoors, military personnel should stand at attention. All others should remove headgear and place the right hand over the heart and stand at attention.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Three_Ruffles_and_Flourishes_Generals_March" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Three Ruffles and Flourishes, General's March</h4></button>
+            <div class="modal" id="Three_Ruffles_and_Flourishes_Generals_March" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Three Ruffles and Flourishes, General's March<</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>Three Ruffles and Flourishes followed by the General's March is used to provide musical honors to Lieutenant (three star) Generals.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#To_The_Color" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>To The Color</h4></button>
+            <div class="modal" id="To_The_Color" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">To The Color</h2>
+                                </div>
+                                <div class="modal-body"><!-- The main body of the pop-up window --> 
+                                       <p>The flag is lowered while To the Color is performed. All military personnel in uniform should stand at present arms during the performance of To The Color. When indoors, military personnel should stand at attention. All others should remove headgear and place the right hand over the heart and stand at attention.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+        <div class="col-lg-3 col-sm-4 col-xs-6 ceremonial-music">
+            <button type="button" data-toggle="modal" data-target="#Two_Ruffles_and_Flourishes_Generals_March" class="btn-ceremonial">
+                <span class="fa fa-info fa-4x"></span>
+                <h4>Two Ruffles and Flourishes, General's March</h4></button>
+            <div class="modal" id="Two_Ruffles_and_Flourishes_Generals_March" tabindex="-1" role="dialog" aria-labelledby="modallabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;
+                                    </span></button>
+                                    <h2 class="modal-title">Two Ruffles and Flourishes, General's March</h2>
+                                </div>
+                                <div class="modal-body"> <!-- The main body of the pop-up window -->
+                                       <p>All military personnel in uniform should stand at present arms during the performance of Taps. When indoors, military personnel should stand at attention. All others should remove headgear and place the right hand over the heart and stand at attention.</p>
+                                </div>
+                            </div><!-- modal content -->
+                        </div><!-- modal dialog -->
+                </div><!-- modal -->         
+</div>
+
+    </div>
+</div>
+
 
        
 <!-- footer -->
