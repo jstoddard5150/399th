@@ -1,14 +1,49 @@
 body {
     padding-top: 50px;
+}
+.mainNav{
+    background-color: #FFE132;
+    border-color: #FFE132;
+    font-weight: 500;
+}
+.navbar-default .navbar-nav>li>a{
+    color:#333;
+}
+.navbar-default .navbar-brand {
+  color:#333;  
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: rgb(0, 0, 100);
+    color: floralwhite;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: black;
+    text-shadow: -2px -2px 15px #2B2B2B;    
+}
+.navbar-default .navbar-brand:hover {
+    color: black;
+    text-shadow: -2px -2px 20px #2B2B2B;
     
 }
+.navbar-default .navbar-toggle {
+    border: none;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #960000;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgb(0,0,100);
+}
+
 .vcenter {
     padding: 100px 0;
     }
+
 .jumbotron {
     background-color: rgb(0, 0,100);
     height: 300px;
     color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .jumbotron h1, h3 {
     margin: 0 15px;
@@ -25,7 +60,6 @@ body {
     margin-top: 98px;
     
 }
-
 .center-block {
   width: 100px;
   display: block;
@@ -121,8 +155,4 @@ footer a {
 .btn-contact:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-/*
- colors 
-2B2B2B - gray
-rgb(18, 69,1) - green
-*/
+

@@ -17,7 +17,7 @@
 {
 	font-size:16px;
 	font-family:Verdana, Arial, sans-serif;
-	line-height:1.6;	
+	line-height:1.6;
 }
 .jp-jplayer audio,
 .jp-jplayer {
@@ -25,16 +25,17 @@
   height: 0px;
   background-color: #000000;
 }
-
+.row {
+    margin:0;
+}
 .jp-audio {
   margin: 1em auto;
-  width: 75%;
   max-width: 100%;
-  padding: 0 20px;
   font-size: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
   color: #2B2B2B;
   line-height: 1.6;
+    padding:0;
 }
 
 .jp-interface {
@@ -234,7 +235,10 @@ color:#337ab7;
 }
 
 /* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
-
+.btn{
+    width: 60px;
+    padding:0;
+}
 div.jp-type-playlist div.jp-playlist li:last-child {
 	padding:5px 0 5px 20px;
 	border-bottom:none;
