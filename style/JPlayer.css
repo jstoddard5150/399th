@@ -55,8 +55,6 @@
 	border-radius: 3px;
 }
 .jp-audio .jp-interface {
-	height:45px;
-    width: 105%;
     margin-left: -2.5%;
 }
 
@@ -233,12 +231,11 @@ color:#337ab7;
 	display:inline;
     border-bottom-style:
 }
+@media (min-width: @screen-sm-min) { .btn{
+   padding:0 20%;
+} }
 
 /* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
-.btn{
-    width: 60px;
-    padding:0;
-}
 div.jp-type-playlist div.jp-playlist li:last-child {
 	padding:5px 0 5px 20px;
 	border-bottom:none;
@@ -318,9 +315,8 @@ span.jp-artist {
 	text-align:center;
 	font-weight:bold;
 }
-.audio-container {
-   
-}
+
+
 
 /* @end */
 
